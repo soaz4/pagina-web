@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HADA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <script
+    src="https://kit.fontawesome.com/81581fb069.js"
+    crossorigin="anonymous"
+    ></script>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            background-color: #efa26e;
+        }
+        th,td{
+            padding: 10px;
+        }
+        th {
+            text-align: left;
+        }
+        </style>
+</head>
+<body>
+    <div class="container">
+
+        <header class="hero">
+
+            <nav class="nav" class="navegacion_ocultar">
+
+                <a href="index.html" class="nav__logo-link">
+                    <img src="./recursos/hada (1).png" class="nav__logo">
+                </a>
+
+                <label class="nav__label">
+                    <input type="checkbox" class="nav__checkbox">
+                </label>
+
+                <ul class="nav__list">
+
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link  nav__link--cta">Inicio</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link nav__link--cta">Temas</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link nav__link--cta">SLE2</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="desafios.html" class="nav__link nav__link--cta" >Desafíos</a>
+                    </li>
+
+                    <li class="nav__item ">
+                        <a href="otros_recursos.html" class="nav__link nav__link--cta">Otros recursos</a>
+                    </li>
+                   
+                    <div class="content-group"></div>
+                        <div class="search-input-box">
+                           <input class="search-input" id="search-input" type="search" placeholder="Buscar">
+                           <a href="#temas" target="_blank">
+                                <i class="fa-solid fa-magnifying-glass icon"> </i>
+                            </a>
+                           
+                          <ul class="container-suggestions">
+                            <ul class="container-suggestions">
+                                <li id="variables">Contenido de Variables</li>
+                                <li id="contadores">Contenido de Contadores</li>
+                                <li id="acumuladores">Contenido de Acumuladores</li>
+        <!-- Agregar las secciones correspondientes aquí -->
+                        </ul>       
+                           
+                        </div>
+                       
+                    </div>
+                </ul>
+
+            </nav>
+            <section class="main2" id="inicio"> 
+             
+                <div class="hero__title2">
+                    <h1 class="hero__title" >Conceptos basicos de algorítmica</h1>
+                    <figure class="hero__figure">
+                        <img src="./recursos/algoritmo.svg" class="hero__img">
+                    </figure> 
+                </div>
+
+                <div> 
+                 <h1 class="hero__title">¿Qué es un algoritmo?</h1>
+
+                <p class="hero__paragraph" > 
+                    Un algoritmo es un conjunto de pasos secuenciales y ordenados que permiten lograr un objetivo.
+                     <br>Que sean pasos secuenciales significa que deben ser ejecutados uno 
+                    después de otro y que sean pasos ordenados quiere decir que deben 
+                    llevar un orden casi obligatorio (u obligatorio en la mayoría de los casos). <br>
+                    Como puedes notar el algoritmo permite lograr un objetivo. O sea que la 
+                    clave para hacer buenos algoritmos y llegar a la solución de un problema
+                     es tener claro el objetivo y no perderlo nunca de vista.
+                </p>
+
+                <h1 class="hero__title">¿Para que usamos los algoritmos?</h1>
+
+                <p class="hero__paragraph" > 
+                    Un algoritmo es Es un conjunto de pasos secuenciales y ordenados que permiten lograr un objetivo.
+                     <br>Que sean pasos secuenciales significa que deben ser ejecutados uno 
+                    después de otro y que sean pasos ordenados quiere decir que deben 
+                    llevar un orden casi obligatorio (u obligatorio en la mayoría de los casos). <br>
+                    Como puedes notar el algoritmo permite lograr un objetivo. O sea que la 
+                    clave para hacer buenos algoritmos y llegar a la solución de un problema
+                     es tener claro el objetivo y no perderlo nunca de vista.
+                </p>
+
+                
+                <h1 class="hero__title" > Expresiones </h1>
+                <p class="hero__paragraph" > 
+                    <br> Las expresiones son combinaciones de constantes, variables, símbolos de operación, 
+                    paréntesis y nombres de funciones especiales. Las mismas ideas son utilizadas en notación 
+                    matemática tracional; por ejemplo,
+                    <br> a + (b + 3) + √c
+                    <br>Aquí los paréntesis indican el orden de cálculo y √ representa la función raíz cuadrada.
+                    <br>Cada expresión toma un valor que se determina tomando los valores de las variables y 
+                    constantes implicadas y la ejecución de las operaciones indicadas. Una expresión consta de
+                    operandos y operadores. Según sea el tipo de objetos que manipulan, las expresiones se clasifican en:
+                    <br>* aritméticas,
+                    <br>* relacionales,
+                    <br>* lógicas,
+                    <br>• carácter.
+                    <br>El resultado de la expresión aritmética es de tipo numérico; el resultado de la expresión
+                    relacional y de una expresión lógica es de tipo lógico; el resultado de una 
+                    expresión carácter es de tipo carácter.
+                </p> 
+                <h1 class="hero__title" > Expresiones aritméticas</h1>
+                <p class="hero__paragraph" > 
+                    <br>Las expresiones aritméticas son análogas a las fórmulas matemáticas. Las variables 
+                    y constantes son numéricas (real o entera) y las operaciones son las aritméticas.
+                </p> 
+                <table style="width: 100%;">
+                    <tr>
+                        <th> signos</th>
+                        <th> significados</th>
+                        
+                    </tr>
+                    <tr> 
+                        <th> +</th>
+                        <th> suma </th>
+                        
+                    </tr> 
+                    <tr> 
+                        <th> -</th>
+                        <th> resta</th>
+                        
+                    </tr> 
+                    <tr> 
+                        <th> *</th>
+                        <th> multiplicación</th>
+                        
+                    </tr> 
+                    <tr> 
+                        <th> /</th>
+                        <th> división</th>
+                        
+                    </tr> 
+                    <tr> 
+                        <th>**,^ </th>
+                        <th> exponenciación</th>
+                        
+                    </tr> 
+                    <tr> 
+                        <th> div,/</th>
+                        <th> división entera</th>
+                        
+                    </tr> 
+                    <tr> 
+                        <th> mod,% </th>
+                        <th> resto</th>
+                        
+                    </tr> 
+
+                 </table> 
+                 <h1 class="hero__title" > </h1>    
+                 <p class="hero__paragraph" > 
+                    <br>Los símbolos +, -,* ,^(⬆️0 **) y las palabras clave div y mod se conocen como 
+                    operadores aritméticos. En la expresión
+                    <br>5 + 3
+                    <br>los valores 5 y 3 se denominan operandos. El valor de la expresión 5 + 3 se 
+                    conoce como resultado
+                    de la expresión.
+                    <br>Los operadores se utilizan de igual forma que en matemáticas. Por consiguiente, 
+                    A . B se escribe en un algoritmo como A * B y 1/4 . C como c/4. Al 
+                    igual que en matemáticas el signo menos juega un doble papel, como resta en A - B 
+                    y como negación en -A.
+                    <br>OBS: Todos los operadores aritméticos no existen en todos los lenguajes de 
+                    programación; por ejemplo, en FORTRAN no existe div y mod. El operador exponenciación es 
+                    diferente según sea el tipo de lenguaje de programación clásico elegido 
+                    (^, ⬆️ en BASIC, ** en FORTRAN).
+                    <br>Los cálculos que implican tipos de datos reales y enteros suelen dar 
+                    normalmente resultados del mismo tipo si los operandos lo son también. 
+                    Por ejemplo, el producto de operandos reales produce un real 
+                    (como en la siguiente tabla).
+                    
+                    <table style="width: 100%;">
+                        <tr>
+                            <th> OPERADOR</th>
+                            <th> SIGNIFICADO</th>
+                            <th> TIPOS DE OPEREANDOS</th>
+                            <th> TIPOS DE RESULTADO</th>
+                        </tr>
+                        <tr> 
+                            <th> +</th>
+                            <th> signo positivo</th>
+                            <th> Entero o Real </th>
+                            <th> Entero o Real</th>
+                        </tr> 
+    
+                        <tr> 
+                            <th> -</th>
+                            <th> signo negativo</th>
+                            <th> Entero o Real</th>
+                            <th> Entero o Real</th>
+                        </tr> 
+    
+                        <tr> 
+                            <th> *</th>
+                            <th>multiplicación</th>
+                            <th> Entero o Real</th>
+                            <th> Entero o Real </th>
+                        </tr> 
+    
+                        <tr> 
+                            <th> /</th>
+                            <th>división</th>
+                            <th> Real</th>
+                            <th> Real </th>
+                        </tr> 
+
+                        <tr> 
+                            <th> div, /</th>
+                            <th>división entera </th>
+                            <th> Entero</th>
+                            <th> Entero </th>
+                        </tr> 
+
+                        <tr> 
+                            <th> mod, %</th>
+                            <th>Módulo (resto)</th>
+                            <th> Entero</th>
+                            <th> Entero </th>
+                        </tr> 
+
+                        <tr> 
+                            <th> ++</th>
+                            <th>incremento</th>
+                            <th> Entero</th>
+                            <th> Entero </th>
+                        </tr> 
+
+                        <tr> 
+                            <th> --</th>
+                            <th>decremento</th>
+                            <th> Entero</th>
+                            <th> Entero </th>
+                        </tr> 
+    
+                     </table> 
+                    
+                    <h1 class="hero__title" > EJEMPLO</h1>    
+                    <p class="hero__paragraph" >
+                        <table style="width: 100%;">
+                            <tr>
+                                <th> 5 X 7 se representa por 5*7</th>
+                                
+                            </tr>
+                            <tr> 
+                                <th> 6/4 se representa por 6/4</th>
+                                
+                            </tr> 
+        
+                            <tr> 
+                                <th> 3⁷ se representa por 3^7</th>
+                                
+                            </tr>  
+                        </table>
+                    
+                    
+                </p> 
+                <h1 class="hero__title" > Operadores DIV (/) y MOD (÷)</h1>    
+                <p class="hero__paragraph" > 
+                    
+                    <br>En C++ y Java el símbolo / representa al operador de división 
+                    entera si ambos argumentos son de tipo entero, y división real 
+                    en caso contrario. El operador mod representa el resto de la 
+                    división entera, y la mayoría de lenguajes utilizan el símbolo ÷.
+                    <br>A div B
+                    <br>Sólo se puede utilizar si A y B son expresiones enteras y 
+                    obtiene la parte entera de A/B. Por consiguiente,
+                    <br>19 div 6                  19/6
+                    <br>toma el valor 3.
+                </p>             
+                <h1 class="hero__title" > Reglas de prioridad</h1>    
+                 <p class="hero__paragraph" > 
+                    <br>Las expresiones que tienen dos o más operandos requieren unas 
+                    reglas matemáticas que permitan determinar el orden de las operaciones, 
+                    se denominan reglas de prioridad o precedencia y son: 
+                    <br>1. Las operaciones que están encerradas entre paréntesis se evalúan 
+                    primero. Si existen diferentes paréntesis anidados (interiores unos a 
+                    otros), las expresiones más internas se evalúan primero. 
+                    <br>2. Las operaciones aritméticas dentro de una expresión suelen seguir 
+                    el siguiente orden de prioridad:
+                    <br>- operador ( )
+                    <br>- operadores ++, - - + y - unitarios
+                    <br>- operadores *, /, % (producto, división, módulo)
+                    <br>- operadores +, - (suma y resta).
+                    <br>En los lenguajes que soportan la operación de exponenciación, 
+                    este operador tiene la mayor prioridad.
+                    <br>En caso de coincidir varios operadores de igual prioridad en 
+                    una expresión o subexpresión encerrada entre paréntesis, el orden 
+                    de prioridad en este caso es de izquierda a derecha, y a esta propiedad 
+                    se denomina asociatividad.
+                </p> 
+                <article class="faq__answer">
+                    <img src="/recursos/ejemplo-vamos.jpeg" class="img_ej">
+                </article>
+                <h1 class="hero__title" > Expresiones lógicas (booleanas)</h1>    
+                 <p class="hero__paragraph" > 
+                    <br>Un segundo tipo de expresiones es la expresión lógica o booleana, 
+                    cuyo valor es siempre verdadero o falso. Recuerde que existen dos 
+                    constantes lógicas, verdadera (true) y falsa (false) y que las variables 
+                    lógicas pueden tomar sólo estos dos valores. En esencia, una expresión lógica 
+                    es una expresión que sólo puede tomar estos dos valores, verdadero y falso. 
+                    Se denominan también expresiones booleanas en honor del matemático británico 
+                    George Boole, que desarrolló el Álgebra lógica de Boole.
+                    <br>Las expresiones lógicas se forman combinando constantes lógicas, variables 
+                    lógicas y otras expresiones lógicas, utilizando los operadores lógicos not, and y or, 
+                    y los operadores relacionales (de relación o comparación) =, <, >, <=, >=, <>.
+                    Operadores de relación
+                    <br>Los operadores relacionales o de relación permiten realizar comparaciones 
+                    de valores de tipo numérico o carácter. Los operadores de relación sirven para 
+                    expresar las condiciones en los algoritmos. Los operadores de relación se muestran 
+                    en la en la siguiente tabla .
+                </p>
+                <h1 class="hero__title" > OPERADORES DE RELACIÓN</h1>    
+                <p class="hero__paragraph" > 
+                   <br>
+                     
+                    <table style="width: 100%;">
+                        
+                        <tr> 
+                            <th> OPERADOR</th>
+                            <th> SIGNIFICADO</th>
+                            
+                        </tr> 
+    
+                        <tr> 
+                            <th> < </th>
+                            <th> menor que</th>
+                            
+                        </tr> 
+                        <tr> 
+                            <th> > </th>
+                            <th> mayor que</th>
+                            
+                        </tr> 
+                        <tr> 
+                            <th> =, == </th>
+                            <th> igual que</th>
+                            
+                        </tr> 
+                        <tr> 
+                            <th> <= </th>
+                            <th> menor o igual que</th>
+                            
+                        </tr> 
+                        <tr> 
+                            <th> >= </th>
+                            <th> mayor o igual que</th>
+                            
+                        </tr> 
+                        <tr> 
+                            <th> <>, != </th>
+                            <th> distinto de</th>
+                            
+                        </tr> 
+                    </table>
+                </p> 
+
+                <p class="hero__paragraph" > 
+                   <br>Por ejemplo, si A = 4 y B = 3, entonces
+                   <br>A > B        es verdadero
+                   <br>mientras que
+                   <br>(A - 2) < (B - 4) es falso.
+                   <br>Los operadores de relación se 
+                   pueden aplicar a cualquiera de los cuatro tipos de datos 
+                   estándar: enteros, real, lógico, carácter.
+                </p> 
+
+                <h1 class="hero__title" > Operadores lógicos </h1>    
+                <p class="hero__paragraph" >
+                    <br>Los operadores lógicos o booleanos básicos son not (no), 
+                    and (y) y or (o). La siguiente tabla muestra el funcionamiento 
+                    de dichos operadores.
+                    (EN FORMATO DE TABLA)
+                    <table style="width: 100%;">
+                        
+                        <tr> 
+                            <th> OPERADOR LÓGICO</th>
+                            <th> EXPRESION lOGICA</th>
+                            <th>SIGNIFICADO</th>
+                            
+                        </tr> 
+                        
+                        <tr> 
+                            <th> no (not), !</th>
+                            <th> no p (not p)</th>
+                            <th>negación de p</th>
+                            
+                        </tr>
+                        
+                        <tr> 
+                            <th> y (and), &&</th>
+                            <th> pyq (p and q)</th>
+                            <th>conjunción de p </th>
+                            
+                        </tr>
+                        
+                        <tr> 
+                            <th> o (o), 11</th>
+                            <th> poq (p or q)</th>
+                            <th>q disyunción de pyq</th>
+                            
+                        </tr>
+                    </table>
+                    
+                </p>
+                    
+                 
+                
+                
+
+                <br><br><a href="index.html" class="hero__cta">volver</a>
+                  
+            </section>
+         
+
+           
+</body>
+</html>

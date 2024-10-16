@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HADA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./recursos/favicon-32x32.png" type="image/x-icon">
+    <script
+			src="https://kit.fontawesome.com/81581fb069.js"
+			crossorigin="anonymous"
+		></script>
+</head>
+<body>
+
+    <div class="container">
+
+        <header class="hero"> 
+
+            <nav class="nav" class="navegacion_ocultar">
+
+                <a href="#hada" class="nav__logo-link">
+                    <img src="./recursos/hada (1).png" class="nav__logo">
+                </a>
+
+                <label class="nav__label">
+                    <input type="checkbox" class="nav__checkbox">
+                </label>
+
+                <ul class="nav__list">
+
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link nav__link--cta">Inicio</a>
+
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link nav__link--cta">Temas</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link nav__link--cta">SLE2</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="desafios.html"class="nav__link nav__link--cta">Desafíos</a>
+                    </li>
+
+                    <li class="nav__item ">
+                        <a href="otros_recursos.html" class="nav__link nav__link--cta">Otros recursos</a>
+                    </li>
+
+                    <div class="content-group">
+                        <div class="search-input-box">
+                           <input class="search-input" id="search-input" type="search" placeholder="Buscar">
+                           <a href="contadores.html " target="_blank">
+                                <i class="fa-solid fa-magnifying-glass icon"> </i>
+                            </a>
+                           
+                          <ul class="container-suggestions">
+                            <ul class="container-suggestions">
+                                <li id="variables">Contenido de Variables</li>
+                                <li id="contadores">Contenido de Contadores</li>
+                                <li id="acumuladores">Contenido de Acumuladores</li>
+        <!-- Agregar las secciones correspondientes aquí -->
+                        </ul>       
+                           
+                        </div>
+                       
+                    </div>
+                       
+                    </div>
+                </ul>
+
+                <script src="suggestions.js"></script>
+                <script src="main.js"></script>
+
+            </nav>
+
+            <section class="faq" id="hada">
+                <h2 class="title title__hight">
+                    EJERCICIOS EN SLE2
+                </h2>
+
+                <section class="faqs__container">
+
+                    <details class="faq__item">
+                        <summary class="faq__question">
+                            <h4 class="faq__title">
+                                Ejercicios básicos
+                            </h4>
+
+
+                        </summary>
+
+                        <article class="faq__answer">
+                            <ul>
+                                <li><a href="/ejercicios/ejercicio13.slx" download class="temas_link">Suma de valores</a></li>
+                                <li><a href="/ejercicios/ejercicio 3.sl" download class="temas_link">Suma y Promedio</a></li>
+                                <li><a href="/ejercicios/ejercicio 1.sl" download class="temas_link">Imprimir estaciones del año</a></li>
+                                <li><a href="/ejercicios/ejercicio 18.sl" download class="temas_link">Ingresar notas y calcular arpobador y reprobados</a></li>
+
+                                <!-- Agregar más enlaces según sea necesario -->
+                            </ul>
+                        </article>
+                    </details>
+
+                    <details class="faq__item">
+                        <summary class="faq__question">
+                            <h4 class="faq__title">
+                                Ejercicios con vectores
+
+                            </h4>
+
+
+                        </summary>
+
+                        <article class="faq__answer">
+                            <ul>
+                                <li><a href="/ejercicios/volcadovectores.sl" class="temas_link" download>Volcado de vectores</a></li>
+                                <li><a href="/ejercicios/tareafactoriales.sl" class="temas_link" download>Factoriales en un vector</a></li>
+                                <li><a href="ejercicio3.sle2" class="temas_link" download>Descargar Ejercicio 3</a></li>7
+                                <li><a href="/ejercicios/volcadovectores.sl" class="temas_link" download>Volcado de vectores</a></li>
+                                <li><a href="/ejercicios/ejercicio22.sl" class="temas_link" download>Cantidad de veces repetidas en un vector de un número </a></li>
+                                <!-- Agregar más enlaces según sea necesario -->
+                            </ul>
+                        </article>
+                        </article>
+                    </details>
+
+                    <details class="faq__item">
+                        <summary class="faq__question">
+                            <h4 class="faq__title">
+                                Ejercicios con matrices
+                            </h4>
+
+
+                        </summary>
+
+                        <article class="faq__answer">
+                            <ul>
+                                <li><a href="/ejercicios/vectormatriz.sl" class="temas_link" download>Pasar matriz en un vector</a></li>
+                                <li><a href="/ejercicios/diferenciamatrices.slx" class="temas_link" download>diferencia de matrices</a></li>
+                                <li><a href="/ejercicios/matrizbinaria.slx" class="temas_link" download>Matriz binaria</a></li>
+                                <li><a href="/ejercicios/sumafilacolumna.sl" class="temas_link" download>Suma de columna y filas de una matriz</a></li>
+                                <li><a href="/ejercicios/matrizraspuesta3.sl" class="temas_link" download>Traspuesta de una matriz</a></li>
+                                <li><a href="/ejercicios/matrizarpoyrepro.sl" class="temas_link" download>Cantidad de aprobados y reprobados en una matriz</a></li>
+                                <!-- Agregar más enlaces según sea necesario -->
+                            </ul>
+                        </article>  
+                        </article>
+                    </details>
+                </section>
+               <br> <br></b><a href="SLE2.html" class="hero__cta" >volver</a>
+
+</body>

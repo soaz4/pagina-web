@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HADA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="shortcut icon" href="./recursos/favicon-32x32.png" type="image/x-icon">
+    <script
+    src="https://kit.fontawesome.com/81581fb069.js"
+    crossorigin="anonymous"
+    ></script>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            background-color: #efa26e;
+        }
+        th,td{
+            padding: 10px;
+        }
+        th {
+            text-align: left;
+        }
+        </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <header class="hero"> 
+
+            <nav class="nav" class="navegacion_ocultar">
+
+                <a href="#hada" class="nav__logo-link">
+                    <img src="./recursos/hada (1).png" class="nav__logo">
+                </a>
+
+                <label class="nav__label">
+                    <input type="checkbox" class="nav__checkbox">
+                </label>
+
+                <ul class="nav__list">
+
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link nav__link--cta">Inicio</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link nav__link--cta">Temas</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link nav__link--cta">SLE2</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="desafios.html"class="nav__link nav__link--cta">Desafíos</a>
+                    </li>
+
+                    <li class="nav__item ">
+                        <a href="otros_recursos.html" class="nav__link nav__link--cta">Otros recursos</a>
+                    </li>
+
+                    <div class="content-group">
+                        <div class="search-input-box">
+                           <input class="search-input" id="search-input" type="search" placeholder="Buscar">
+                           <a href="#" target="_blank">
+                                <i class="fa-solid fa-magnifying-glass icon"> </i>
+                            </a>
+                           
+                          <ul class="container-suggestions">
+                            <li>Sugerencia 1</li>
+                            <li>Sugerencia 2</li>
+                            <li>Sugerencia 3</li>
+                            <li>Sugernecia 4</li>
+                        </ul>       
+                           
+                        </div>
+                       
+                    </div>
+                       
+                 </div>
+                </ul>
+
+                <script src="suggestions.js"></script>
+                <script src="main.js"></script>    
+                    
+                       
+                    </div>
+                </ul>
+
+            </nav>
+    
+    
+        <section class="main2">
+
+
+            <div class="hero__title__padding"> 
+                <h1 class="hero__title" > Arrays (arreglos).</h1>  
+                    <p class="hero__paragraph" >
+                        <br><br>&emsp;El término array se conserva en inglés por su amplia aceptación en la comunidad de ingeniería informática y de st remas. Sin embargo, es preciso constatar que en prácticamente toda Latinoamérica (al menos en muchos de de sis traducción es arreglo. El DRAE (última edición, 22a., Madrid 2001) no considera ninguno de los dos términos como válidos, aunque la acepción 2 de la definición de arreglo pudiera ser ilustrativa del porqué de la adopción de el empleado término por la comunidad latinoamericana: "Regla, orden, coordinación". 
+                        Un array, o arreglo en Latinoamérica, es una secuencia de posiciones de la memoria central a las que se puede acceder directamente, que contiene datos del mismo tipo y pueden ser seleccionados de manera individual mediante el uso de subíndices. Este capítulo estudia el concepto de "arrays unidimensionales y multidimensionales", así como el procesamiento de los mismos.
+                    </p>
+                        <h1 class="hero__title" > Estructuras de datos</h1>  
+                    <p class="hero__paragraph" >
+                        <br>Una estructura de datos es una colección de datos que pueden ser caracterizados por su organización y las operaciones que se definen en ella.
+                        Las estructuras de datos son muy importantes en los sistemas de computadora. Los tipos de datos más frecuentes utilizados en los diferentes lenguajes de programación son:
+                    </p>
+                    <h1 class="hero__title" > Arrays (arreglos) unidimensionales: los vectores</h1>    
+                    <p class="hero__paragraph" >
+                        <br>&emsp;Un array o arreglo (matriz o vector) es un conjunto finito y ordenado de 
+                        elementos homogéneos. La propiedad "ordenado" significa que el elemento primero, segundo, 
+                        tercero, ..., n-ésimo de un array puede ser identificado. Los elementos de un 
+                        array son homogéneos, es decir, del mismo tipo de datos. Un array puede estar compuesto 
+                        de todos sus elementos de tipo cadena, otro puede tener todos sus elementos de tipo entero, 
+                        etcétera. Los "arrays" se conocen también como matrices, en matemáticas, y tablas, 
+                        en cálculos financieros.
+                        <br>El tipo más simple de array es el "array unidimensional" o vector (matriz de 
+                        una dimensión). Un vector de una dimensión denominado NOTAS que consta de n elementos se 
+                        puede representar de la siguiente forma:
+                    </p>
+                    <table style="width: 100%;">
+                        <tr>
+                            <th> Notas(1) </th>
+                            <th> Notas(2) </th>
+                            <th>  </th>
+                            <th> . . . . . </th>
+                            <th> Notas(I)</th>
+                            <th> . . . . . </th>
+                            <th> Notas(N) </th>
+                        </tr>
+    
+                    </table>
+    
+                    <p class="hero__paragraph" >
+                        <br><br>El subíndice o índice de un elemento (1, 2, ..., i, n) designa su posición 
+                        en la ordenación del vector. Otras posibles notaciones del vector son:
+                        <br> a1, a2, ..., ai, ..., 
+                        <br>⬆️ (en matemáticas y algunos lenguajes (VB 6.0 Y V.B.Net)
+                        <br>A(1), A(2), ..., A(i), ..., A(n)
+                        <br>A[1], A[2],
+                        <br>A[i], ..., A[n]
+                        <br>⬆️ En programación (Pascal y C)
+                        <br>en programación (Pascaly C)
+                        <br><br>Obsérvese que sólo el vector global tiene nombre (NOTAS). Los elementos del 
+                        vector se referencian por su subíndice o índice ("subscript"), es decir, su 
+                        posición relativa en el valor. En algunos libros y tratados de programación, 
+                        además de las notaciones anteriores, se suele utilizar esta 
+                        otra:
+                        <br>A(L:U) = (A(I)}
+                        <br>para I = L, L+1, ..., U-1, U donde cada elemento A (I) es de tipo de datos T 
+                        que significa: A, vector unidimensional con elementos de datos tipo T, 
+                        cuyos subíndices varían en el rango de L a U, lo cual significa que el índice 
+                        no tiene por qué comenzar necesariamente en 0 o en 1.
+                        <br>Como ejemplo de un vector o array unidimensional se puede considerar el vector TEMPERATURA, que 
+                        contiene las temperaturas horarias registradas en una ciudad durante las 24 horas del día. Este 
+                        vector constará de 24 elementos de tipo real, ya que las temperaturas normalmente no
+                        serán enteras siempre.
+                        <br>El valor mínimo permitido de un vector se denomina "límite inferior" del vector (L) y 
+                        el valor máximo permitido se denomina límite superior (U). En el ejemplo del vector 
+                        <br>TEMPERATURAS el limite inferior es 1 y el superior 24.
+                        <br>TEMPERATURAS (I)
+                        <br>donde 1 < = I <= 24
+                        <br><br>El número de elementos de un vector se denomina "rango" del vector. El rango del vector 
+                        A(L:U) es U-L+1. El rango del vector B (1:n) es n.
+                        Los vectores, como ya se ha comentado, pueden contener datos no numéricos, es decir, tipo 
+                        "carácter". Por ejemplo, un vector que representa las frutas que se 
+                        venden en un supermercado:
+                        <br>FRUTAS (1)&emsp;&emsp;Uvas
+                        <br>FRUTAS (2)&emsp;&emsp;manzanas 
+                        <br>.&emsp;&emsp;&emsp;.
+                        <br>.&emsp;&emsp;&emsp;.
+                        <br>.&emsp;&emsp;&emsp;.
+                        <br>FRUTAS (I)&emsp;⇄&emsp;papayas
+                        <br>.&emsp;&emsp;&emsp;.
+                        <br>.&emsp;&emsp;&emsp;.
+                        <br>.&emsp;&emsp;&emsp;.
+                        <br>FRUTAS (N)&emsp;&emsp;melocotones
+
+                        <br><br>Otro ejemplo de un vector pueden ser los nombres de los alumnos de una clase. 
+                        El vector se denomina ALUMNOS y tiene 30 elementos de rango.
+                        <br>ALUMNOS
+                        <br>1&emsp;Luis Francisco 
+                        <br>2&emsp;Jose 
+                        <br>3&emsp;Victoria
+                        <br>&emsp;&emsp;.
+                        <br>i&emsp;Martin 
+                        <br>&emsp;&emsp;.
+                        <br>30&emsp;Graciela    
+
+                        <br>Los vectores almacenan en la memoria central de la computadora en un orden 
+                        adyacente. Así, un vector de 50 números denominado NUMEROS se representa 
+                        gráficamente por 50 posiciones de memoria sucesiva.
+                    </p>
+                    <h1 class="hero__title" > Operaciones Básicas con Vectores</h1> 
+                    <table style="width: 100%;">
+                        <tr>
+                            <th> Acciones </th>
+                            <th> Resultados </th>
+                        </tr>
+
+                        <tr> 
+                            <th> Escribir(X[1])</th>
+                            <th> Visualiza el valor de X[1] o 14.0 </th>
+                        </tr> 
+    
+                        <tr> 
+                            <th> X[4]←45</th>
+                            <th> Almacena el valor 45 en X[4] </th>
+                        </tr>
+
+                        <tr>
+                            <th> SUMA ← X[1]+X[3]</th>
+                            <th> Almacena la suma de X[1] y X[3]  </th>
+                        </tr>
+
+                        <tr> 
+                            <th> SUMA=SUMA+X[4] </th>
+                            <th> Añade en la variable SUMA el valor de X[4]. </th>
+                        </tr> 
+                        
+                        <tr> 
+                            <th> X[5] ← X[5]+3,5 </th>
+                            <th> Suma 3.5 a X[5]; </th>
+                        </tr>
+
+                        <tr> 
+                            <th> X[6] ← X[1]+X[2]</th>
+                            <th> Almacena la suma de X[1] y X[2] en X[6].</th>
+                        </tr>
+    
+                    </table>
+                    <br><br>  
+                    <h1 class="hero__title" > Operaciones con vectores</h1>    
+                    <p class="hero__paragraph" >
+                        <br>Un vector, como ya se ha mencionado, es una secuencia ordenada de elementos 
+                        como
+                        <br>X[1], X[2], .., X[n]
+                        <br><br>El límite inferior no tiene por qué empezar en uno. El vector L
+                        <br>L[0], L[1], L[2], L[3], [4], L[5]
+                        <br><br>contiene seis elementos, en el que el primer elemento comienza 
+                        en cero. El vector P, cuyo rango es 7 y sus límites inferior y 
+                        superior son -3 y 3, es
+                        <br>PI-3], P[-2], P[-1], P[0], P[1], P[2], P[3]
+                        <br><br>Las operaciones que se pueden realizar con vectores durante el proceso 
+                        de resolución de un problema son:
+                        <br>* asignación,
+                        <br>* lecturalescritura,
+                        <br>* recorrido (acceso secuencial),
+                        <br>* actualizar (añadir, borrar, insertar),
+                        <br>*  ordenación,
+                        <br>* búsqueda.
+                        <br><br>En general, las operaciones con vectores implican el procesamiento o tratamiento 
+                        de los elementos individuales del vector.
+                    </p>
+
+                    <h1 class="hero__title" > Asignación</h1>    
+                    <p class="hero__paragraph" >
+                        <br>La asignación de valores a un elemento del vector se realizará con 
+                        la instrucción de asignación:
+                        <br>A[29] ← 5 asigna el valor 5 al elemento 20 del vector A
+                        <br><br>
+                        <br>Si se desea asignar valores a todos los elementos de un vector, se debe 
+                        recurrir a estructuras repetitivas (desde, mientras o repetir) e incluso 
+                        selectivas (si-entonces, segun),
+                        <br>leer (A[i])
+                        <br>Si se introducen los valores 5, 7, 8, 14 y 12 mediante asignaciones
+                        <br>A [1] ← 5
+                        <br>A[2] ← 7
+                        <br>A[3] ← 8
+                        <br>A[4] ← 14
+                        <br>A[5] ← 12
+                        
+                        <br><br>El ejemplo anterior ha asignado diferentes valores a cada elemento del vector A; si se desea dar el mismo valor a todos los elementos, la notación algorítmica se simplifica con el formato.
+                        <br>desde i = 1 hasta 5 hacer
+                        <br>&emsp;A[i] ← 8
+                        <br>fin_desde
+                        <br>donde A[i] tomará los valores numéricos
+                        <br>A[1] = 8, A[2] = 8, ..., A[5] =8
+                        <br>Se puede utilizar también la notación
+                        <br>A ← 8
+                        <br>para indicar la asignación de un mismo valor a cada elemento de un vector A. Esta 
+                        notación se considerará con mucho cuidado para evitar confusión con posibles 
+                        variables simples numéricas de igual nombre (A).
+                        <br>Lectura/escritura de datos
+                        <br>La lectura/escritura de datos en "arrays" u operaciones de entrada/salida 
+                        normalmente se realizan con estructuras repetitivas, aunque puede también hacerse 
+                        con estructuras selectivas. Las instrucciones simples de lectura/escritura 
+                        se representarán como
+                        <br>leer (V[5]) leer el elemento V [5] del vector V.
+                    </p>
+                    <h1 class="hero__title" > Acceso secuencial al vector (recorrido)</h1>    
+                    <p class="hero__paragraph" >
+                        <br>Se puede acceder a los elementos de un vector para introducir datos (escribir) 
+                        en él o bien para visualizar su contenido (leer). A la operación de 
+                        efectuar una acción general sobre todos los elementos de un vector se le 
+                        denomina recorrido del vector. Estas operaciones se realizan utilizando estructuras 
+                        repetitivas, cuyas variables de control (por ejemplo, I) se utilizan como 
+                        subíndices del vector (por ejemplo, s[1]). El incremento del contador del bucle 
+                        producirá el tratamiento sucesivo de los elementos del vector.
+                    </p>
+                    <h1 class="hero__title" > Arrays de varias dimensiones</h1>    
+                    <p class="hero__paragraph" >
+                        <br>Los vectores examinados hasta ahora se denominan arrays unidimensionales y 
+                        en ellos cada elemento se define o referencia por un índice o subíndice. Estos 
+                        vectores son elementos de datos escritos en una secuencia. Sin embargo, 
+                        existen grupos de datos que son representados mejor en forma de tabla o matriz 
+                        con dos o más subíndices. Ejemplos típicos de tablas o matrices son: 
+                        tablas de distancias kilométricas entre ciudades, cuadros horarios de trenes 
+                        o aviones, informes de ventas periódicas (mes/unidades vendidas o bien 
+                        mes/ventas totales), etcétera. Se pueden definir tablas o matrices como arrays 
+                        multidimensionales, cuyos elementos se pueden referenciar por dos, tres o más
+                        subíndices. Los arrays no unidimensionales los dividiremos en dos grandes grupos:
+                        <br>arrays bidimensionales (2 dimensiones)
+                        <br>arrays multidimensionales (3 o más dimensiones)
+                        <br>Arrays bidimensionales (tablas/matrices)
+                        <br>El array bidimensional se puede considerar como un vector de vectores. Es, por 
+                        consiguiente, un conjunto de elementos, todos del mismo tipo, en el cual el orden de 
+                        los componentes es significativo y en el que se necesita especificar dos subíndices 
+                        para poder identificar cada elemento del array.
+                        <br>Si se visualiza un array unidimensional se puede considerar como una columna 
+                        de datos; un bidimensional es un grupo de columnas.
+                        <br>El diagrama representa una tabla o matriz de 30 elementos (5 × 6) con 
+                        5 filas y 6 columnas. Como en un vector de 30 elementos, cada uno de ellos 
+                        tiene el mismo nombre. Sin embargo, un subíndice no es suficiente para 
+                        especificar un elemento de un array bidimensional; por ejemplo, si el nombre del array es 
+                        M, no se puede indicar M [3], ya que no sabemos si es el tercer elemento de 
+                        la primera fila o de la primera columna. Para evitar la ambigüedad, los elementos de 
+                        un array bidimensional se referencian con dos subíndices: el primer subíndice se refiere 
+                        a la fila y el segundo subíndice se refiere a la columna. Por consiguiente,
+                        M[2, 3] se refiere al elemento de la segunda fila, tercera columna. En nuestra tabla ejemplo 
+                        M[2, 3] contiene el valor 18. 
+                        <br>Un array bidimensional M, también denominado matriz (términos matemáticos) o tabla (tér-minos financieros), 
+                        se considera que tiene dos dimensiones (una dimensión por cada subíndice) y necesita un valor 
+                        para cada subíndice para poder identificar un elemento individual.
+                    </p>
+                       
+                    <p class="hero__paragraph" >
+                        <br>En notación estándar, normalmente el primer subíndice se refiere a la fila 
+                        del array, mientras que el segundo subíndice se refiere a la columna del array. 
+                        Es decir, B(I, J) es el elemento de B que ocupa la Iª fila y la Jª columna.
+                        <br>El elemento B [I, J] también se puede representar por BI, J. Más formalmente 
+                        en notación algorítmica, el array B con elementos del tipo T (numéricos, 
+                        alfanuméricos, etcétera) con subíndices fila que varían en el rango de 1 a M y subíndices 
+                        columna en el rango de 1 a N es
+                        <br>B (1:M, 1:N) = {B[I, J]}
+                        <br>donde I = 1, ..., M
+                        <br>&emsp;&emsp;J = 1, ..., N
+                        <br><br>o bien 
+                        <br>&emsp;&emsp;1 <= I <= M
+                        <br>&emsp;&emsp;1 <= J <= N
+                        <br><br>cada elemento B[I, J] es de tipo T.
+                        <br><br>
+                        <br>El array B se dice que tiene M por N elementos. Existen N elementos en cada fila 
+                        y M elementos en cada columna (M*N).
+                        <br>Los arrays de dos dimensiones son muy frecuentes: las calificaciones de los 
+                        estudiantes de una clase se almacenan en una tabla NOTAS de dimensiones NOTAS 
+                        [20, 5], donde 20 es el número de alumnos y 5 el número de asignaturas. 
+                        El valor del subíndice I debe estar entre 1 y 20, y el de J entre 1 y 5. Los 
+                        subíndices pueden ser variables o expresiones numéricas, NOTAS (M, 4) y en ellos el 
+                        subíndice de filas irá de 1 a M y el de columnas de 1 a N.
+                        <br>En general, se considera que un array bidimensional comienza sus subíndices en 0 
+                        o en 1 (según el lenguaje de programación, O en el lenguaje C, 1 en FORTRAN), 
+                        pero pueden tener límites seleccionados por el usuario durante la codificación del 
+                        algoritmo. En general, el array bidimensional B con su primer subíndice, variando desde 
+                        un límite inferior L (inferior, low) a un límite superior U (superior, up). En notación 
+                        algorítmica.
+                        <br>B (L1: U1, L2:U2) = {B[I, J]}
+                    </p>
+                    <h1 class="hero__title" > Arrays multidimensionales</h1>    
+                    <p class="hero__paragraph" >
+                        <br>Un array puede ser definido de tres dimensiones, cuatro dimensiones, hasta de 
+                        n-dimensiones. Los conceptos de rango de subíndices y número de elementos se 
+                        pueden ampliar directamente desde arrays de una y dos dimensiones a estos 
+                        arrays de orden más alto. En general, un array de n-dimensiones requiere que 
+                        los valores de n subíndices puedan ser especificados a fin de identificar un elemento 
+                        individual del array. Si cada componente de un array tiene n subíndices, 
+                        el array se dice que es sólo de n-dimensiones. El array A de n-dimensiones se 
+                        puede identificar como
+                        <br>A (L1: U1, L2:U2, ... Ln:Un)
+                        <br>y un elemento individual del array se puede especificar por
+                        <br>A(I₁‚ I₂‚ ..., Iₙ)
+                        <br>donde cada subíndice Iₖ, está dentro de los límites adecuados
+                        <br>Lₖ<= Iₖ <= Uₖ donde k = 1, 2, ..., n
+                        <br>El número total de elementos de un array A es
+                        <br>n
+                        <br>∏&emsp;&emsp;(Uₖ-Lₖ+1)   
+                        <br>k=1
+                        <br>∏(símbolo del producto)
+                        <br>que se puede escribir alternativamente como
+                        <br>(U₁-L₁+1)(U₂-L₂+1)...*(Uₙ-Lₙ+1)
+                        <br>Si los límites inferiores comenzasen en 1, el array se representaría por 
+                        <br>A(K₁,K₂, ...,Kₙ) o bien Aₖ₁, ₖ₂, ..., ₖₙ
+                        <br>Donde 
+                        <br>1<= K₁ <= S₁
+                        <br>1<= K₂ <= S₂
+                        <br>.
+                        <br>.
+                        <br>1<= Kₙ <= Sₙ
+                    </p>
+
+
+            </div>
+                <br><a  href="index.html" class="hero__cta">Volver</a>  
+        </section>
+        
+</body>
+</html>

@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HADA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./recursos/favicon-32x32.png" type="image/x-icon">
+    <script
+    src="https://kit.fontawesome.com/81581fb069.js"
+    crossorigin="anonymous"
+    ></script>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            background-color: #efa26e;
+        }
+        th,td{
+            padding: 10px;
+        }
+        th {
+            text-align: left;
+        }
+        </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <header class="hero"> 
+
+            <nav class="nav" class="navegacion_ocultar">
+
+                <a href="#hada" class="nav__logo-link">
+                    <img src="./recursos/hada (1).png" class="nav__logo">
+                </a>
+
+                <label class="nav__label">
+                    <input type="checkbox" class="nav__checkbox">
+                </label>
+
+                <ul class="nav__list">
+
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link nav__link--cta">Inicio</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link nav__link--cta">Temas</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link nav__link--cta">SLE2</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="desafios.html"class="nav__link nav__link--cta">Desafíos</a>
+                    </li>
+
+                    <li class="nav__item ">
+                        <a href="otros_recursos.html" class="nav__link nav__link--cta">Otros recursos</a>
+                    </li>
+                        
+                    <div class="content-group">
+                        <div class="search-input-box">
+                           <input class="search-input" id="search-input" type="search" placeholder="Buscar">
+                           <a href="#" target="_blank">
+                                <i class="fa-solid fa-magnifying-glass icon"> </i>
+                            </a>
+                           
+                          <ul class="container-suggestions">
+                            <ul class="container-suggestions">
+                                <li id="variables">Contenido de Variables</li>
+                                <li id="contadores">Contenido de Contadores</li>
+                                <li id="acumuladores">Contenido de Acumuladores</li>
+        <!-- Agregar las secciones correspondientes aquí -->
+                               
+                           
+                        </div>
+                       
+                    </div>
+                       
+                </div>
+                </ul>
+
+                <script src="suggestions.js"></script>
+                <script src="main.js"></script>  
+                  
+                       
+                    </div>
+                </ul>
+
+            </nav>
+            <section class="main2" >
+                <div class="hero__title__padding">
+                     
+                    <h1 class="hero__title" > ESTRUCTURA DE CONTROL</h1>    
+                    <p class="hero__paragraph" >
+                        <br>La estructura de control son los mecanismos que permiten alterar 
+                        el flujo secuencial de ejecución de un programa, lo que facilita tomar 
+                        decisiones, repetir bloques de instrucciones, o saltar a otras partes del código.
+                    
+                        <br>En un programa estructurado el flujo lógico se gobierna por las 
+                        estructuras de control básicas:
+                        <br>1. Secuenciales.
+                        <br>2. Repetitivas.
+                        <br>3. Selectivas.
+                    </p>
+                    <h1 class="hero__title" > Estructura secuencial</h1>    
+                    <p class="hero__paragraph" >
+                        <br>Una estructura secuencial es aquella en la que una acción 
+                        (instrucción) sigue a otra en secuencia. Las tareas se suceden de tal modo que 
+                        la salida de una es la entrada de la siguiente y así sucesivamente hasta el final 
+                        del proceso. La estructura secuencial tiene una entrada y una salida.
+                    </p>
+                    <h1 class="hero__title" > Estructuras selectivas</h1>    
+                    <p class="hero__paragraph" >
+                        <br>La especificación formal de algoritmos realmente tiene utilidad cuando el 
+                        algoritmo requiere u descripción más complicada que una lista sencilla de 
+                        instrucciones. Este es el caso cuando existen un número de posibles alternativas 
+                        resultantes de la evaluación de una determinada condición.
+                        <br>Las estructuras selectivas se utilizan para tomar decisiones lógicas; de ahí 
+                        que también se suelen denominar estructuras de decisión o alternativas.
+                        <br>En las estructuras selectivas se evalúa una condición y en función del resultado 
+                        de la misma se realiza una opción u otra. Las condiciones se especifican usando 
+                        expresiones lógicas. La representación de una estructura selectiva se hace 
+                        con palabras en pseudocódigo (if, then, else o bien en español si, entonces, si_no), 
+                        con una figura geométrica en forma de rombo o bien con un triángulo en el interior 
+                        de una caja rectangular. Las estructuras selectivas o alternativas pueden ser: 
+                        <br>- simples,
+                        <br>- dobles,
+                        <br>-  múltiples.
+                        <br>OBS: La estructura simple es si (if) con dos formatos: Formato Pascal, 
+                        si-entonces (if-then) y formato C, si (if). La estructura selectiva doble es 
+                        igual que la estructura simple si a la cual se le añade la cláusula si-no (else). 
+                        La estructura selectiva múltiple es según_sea (switch en lenguaje c, case en Pascal).
+                    </p>
+                    <h1 class="hero__title" > Alternativa simple (si-entonces/if-then)</h1>    
+                    <p class="hero__paragraph" >
+                        <br>La estructura alternativa simple si-entonces (en inglés if-then) ejecuta 
+                        una determinada acción cuando se cumple una determinada condición. 
+                        La selección si-entonces evalúa la condi- ción y
+                        <br>* si la condición es verdadera, entonces ejecuta la acción S1 
+                        (o acciones caso de ser S1 una acción compuesta y constar de varias acciones),
+                        <br>* si la condición es falsa, entonces no hace nada.
+                    </p>
+                    <h1 class="hero__title" > Alternativa doble (si-entonces-sino/if-then-else)</h1>    
+                    <p class="hero__paragraph" >
+                        <br>La estructura anterior es muy limitada y normalmente se necesitará una estructura
+                         que permita elegir entre dos opciones o alternativas posibles, en función 
+                         del cumplimiento o no de una determinada condición. Si la condición C 
+                         es verdadera, se ejecuta la acción S1 y, si es falsa, se ejecuta la acción S2.
+                    </p>
+
+                    <h1 class="hero__title" > Alternativa múltiple (según_sea, caso de/case)</h1>    
+                    <p class="hero__paragraph" >
+                        <br>Con frecuencia, en la práctica, es necesario que existan más de dos elecciones 
+                        posibles (por ejemplo, en la resolución de la ecuación de segundo grado existen tres 
+                        posibles alternativas o caminos a seguir, según que el discriminante sea negativo, 
+                        nulo o positivo). Este problema, como se verá más adelante, se podría resolver 
+                        por estructuras alternativas simples o dobles, anidadas o en cascada; sin 
+                        embargo, si el número de alternativas es grande este método puede plantear serios 
+                        problemas de escritura del algoritmo y naturalmente de legibilidad.
+                        <br>La estructura de decisión múltiple evaluará una expresión que podrá tomar n valores 
+                        distintos, 1,2,3,4, ..., n. Según que elija uno de estos valores en la condición, se 
+                        realizará una de las n acciones lo que es igual, el flujo del algoritmo seguirá un 
+                        determinado camino entre los n posibles.
+                    </p>
+                    <h1 class="hero__title" > Estructuras de decisión anidadas (en escalera)</h1>    
+                    <p class="hero__paragraph" >
+                        <br>Las estructuras de selección si-entonces y si-entonces-si_no implican la selección 
+                        de una de dos opciones. Es posible utilizar también la instrucción si para diseñar 
+                        estructuras de selección que contengan más de dos opciones. Por ejemplo, una 
+                        estructura si-entonces puede otra estructura si-entonces, y esta estructura si-entonces puede 
+                        contener otra, y así sucesiva- mente cualquier número de veces; a su vez, dentro
+                        de cada estructura pueden existir diferentes
+                        acciones.
+                        
+                        <br><br>Las estructuras si interiores a otras estructuras si se denominan anidadas o encajadas:
+                    </p>
+                    <hr>
+                        <br>si < condicion1 > entonces
+                        <br>&emsp;si < condicion2 > entonces
+                        <br>.
+                        <br>.
+                        <br>.
+                        <br> < acciones >
+                        <br>&emsp;fin_si
+                        <br>fin_si
+                    <hr>
+                    
+                    <p class="hero__paragraph" >
+                    <br><br>Una estructura de selección de n alternativas o de decisión múltiple puede ser 
+                    construida utilizando una estructura si con este formato:
+                    </p>
+                    <hr>
+                        <br>si < condicion1 > entonces
+                        <br>&emsp;< acciones >
+                        <br>si_no
+                        <br>&emsp;si < condicion2 > entonces
+                        <br>&emsp;&emsp;< acciones >
+                        <br>si_no
+                        <br>&emsp;si < condicion3 > entonces
+                        <br>&emsp;&emsp;< acciones >
+                        <br>si_no
+                        <br>.
+                        <br>.
+                        <br>.
+                        <br>&emsp;&emsp;&emsp;fin_si
+                        <br>&emsp;&emsp;fin_si
+                        <br>&emsp;fin_si
+                    <hr>
+                    <br><br> 
+                    <p class="hero__paragraph" >
+                        <br>Una estructura selectiva múltiple constará de una serie de estructuras si, 
+                        unas interiores a otras. Como las estructuras si pueden volverse bastante 
+                        complejas para que el algoritmo sea claro, será preciso utilizar indentación 
+                        (sangría o sangrado), de modo que exista una correspondencia entre las palabras 
+                        reservadas si y fin_si, por un lado, y entonces y si_no, por otro.
+                        <br>La escritura de las estructuras puede variar de unos lenguajes a otros, por 
+                        ejemplo, una estructura si admite también los siguientes formatos:
+                    </p>
+                    <hr>    
+                        <br>si < expresion booleana1 > entonces
+                        <br>&emsp;< acciones >
+                        <br>si_no 
+                        <br>&emsp;si < expresion booleana2 > entonces 
+                        <br>&emsp;&emsp;< acciones >
+                        <br>si_no
+                        <br>&emsp;si < expresion booleana3 > entonces
+                        <br>&emsp;&emsp;<acciones>
+                        <br>si_no
+                        <br>&emsp;< acciones >
+                        <br>&emsp;&emsp;fin_si
+                        <br>&emsp;fin_si
+                        <br>fin_si
+                        <hr>
+                    
+                    <p class="hero__paragraph" >
+                        <br>o bien:
+                    </p>
+                    <hr>
+                        <br>si < expresion booleana1 > entonces 
+                        <br>&emsp;< acciones >
+                        <br>si_no si < expresion booleana2 > entonces
+                        <br>&emsp;< acciones >
+                        <br>fin_si
+                        <br>.
+                        <br>.
+                        <br>.
+                        <br>fin_si
+                    <hr>
+                    <h1 class="hero__title" >BUCLES</h1>    
+                    <p class="hero__paragraph" >
+                        <br>Se describe y analiza el concepto de bucle o lazo como la sección de 
+                        código que se repite y que se denomina así ya que cuando termina la 
+                        ejecución de la última sentencia el flujo de control vuelve a la primera 
+                        sentencia y comienza otra repetición de las sentencias del código. Cada 
+                        repetición se conoce como iteración o pasada a través del bucle.
+                        <br>Se estudian los bucles más típicos, tales como mientras, 
+                        hacer-mientras, repetir-hasta que y desde (o para). 
+                    </p>
+                    <br><br>
+                    <h1 class="hero__title" > Estructuras repetitivas</h1>    
+                    <p class="hero__paragraph" >
+                        <br>Las computadoras están especialmente diseñadas para todas aquellas 
+                        aplicaciones en las cuales una o conjunto de ellas deben repetirse muchas 
+                        veces. Un tipo muy importante de estructura es el algoritmo necesario para 
+                        repetir una o varias acciones un número determinado de veces. Un programa 
+                        que lee una lista de números puede repetir la misma secuencia de mensajes al 
+                        usuario e instrucciones de lectura hasta que todos los números de un 
+                        archivo o fichero se lean.
+                        <br>Las estructuras que repiten una secuencia de instrucciones un 
+                        número determinado de veces se denominan "bucles" y se le llama "iteración" 
+                        al hecho de repetir la ejecución de una secuencia de acciones. Un ejemplo 
+                        aclarará la cuestión. Supongamos que se desea sumar una lista de números 
+                        escritos desde teclado, por ejemplo, las calificaciones de los alumnos 
+                        de una clase. El medio conocido hasta ahora es leer los números y 
+                        añadir sus valores a una variable SUMA que contenga las sucesivas sumas 
+                        parciales. La variable SUMA se hace igual a cero y a continuación se incrementa 
+                        en el valor del número cada vez que uno de ellos se lea. El algoritmo que 
+                        resuelve este problema es:
+                        <br>algoritmo suma
+                        <br>var
+                        <br>entero : SUMA, NUMERO
+                        <br>inicio
+                        <br>SUMA ⬅️ O
+                        <br>leer (numero)
+                        <br>SUMA ⬅️ SUMA + numero
+                        <br>leer (numero)
+                        <br>SUMA ⬅️ SUMA + numero leer (numero)
+                        <br>fin
+                        
+                        <br><br>y así sucesivamente para cada número de la lista. En otras palabras, 
+                        el algoritmo repite muchas veces las acciones.
+                        <br>leer (numero)
+                        <br>SUMA ⬅️ SUMA + numero
+                        <br><br>Tales opciones repetidas se denominan "bucles o lazos". 
+                        La acción (o acciones) que se repite en un bucle se denomina "iteración". 
+                        Las dos principales preguntas a realizarse en el diseño de un bucle son ¿qué contiene 
+                        el bucle? Y, ¿cuántas veces debe repetirse?
+                        
+                        <br><br>Cuando se utiliza un bucle para sumar una lista de números, 
+                        se necesita saber cuántos números han de sumarse. Para ellos 
+                        necesitaremos conocer algún medio para detener el bucle. En el ejemplo 
+                        anterior usaremos la técnica de solicitar al usuario el número 
+                        que desea, por ejemplo, N. Existen dos procedimientos para contar el 
+                        número de iteraciones, usar una variable TOTAL que se inicializa 
+                        a la cantidad de números que se desea y a continuación se decrementa 
+                        en uno cada vez que el bucle se repite (este procedimiento añade una 
+                        acción más al cuerpo del bucle: TOTAL ⬅️ TOTAL - 1), o bien inicializar 
+                        la variable TOTAL en 0 o en 1 e ir incrementando en uno a cada
+                        iteración hasta llegar al número deseado.
+                        <br>algoritmo suma_numero
+                        <br>var
+                        <br>entero: N, TOTAL
+                        <br>real : NUMERO, SUMA
+                        <br>inicio
+                        <br>leer (N)
+                        <br>TOTAL ⬅️ N
+                        <br>SUMA ⬅️ O
+                        <br>mientras TOTAL >0 hacer
+                        <br>leer (NUMERO)
+                        <br>SUMA ⬅️ SUMA+NUMERO
+                        <br>TOTAL ⬅️ TOTAL - 1
+                        <br>fin_mientras
+                        <br>escribir ('La suma de los', N, 'números es', SUMA)
+                        <br>El bucle también podrá haberse terminado poniendo cualquiera 
+                        de estas condiciones:
+                        <br>* hasta que TOTAL sea cero
+                        <br>* desde 1 hasta N
+                        <br><br>Para detener la ejecución de los bucles se utiliza una condición 
+                        de parada. El pseudocódigo de una estructura repetitiva tendrá 
+                        siempre este formato:
+                        <br>inicio 
+                        <br>//inicialización de variables
+                        <br>repetir
+                        <br>&emsp;acciones S1, S2, ...
+                        <br>&emsp;salir según condición
+                        <br>&emsp;acciones Sn, Sn+1, ...
+                        <br>fin_repetir
+                        
+                        <br><br>Aunque la condición de salida se indica en el formato anterior en 
+                        el interior del bucle, y existen lenguajes que así la contienen expresamente, 
+                        lo normal es que la condición se indique al final o al principio del bucle, 
+                        y así se consideran tres tipos de instrucciones o estructuras 
+                        repetitivas o iterativas generales y una particular que denominaremos iterar, 
+                        que contiene la salida en el interior del bucle.
+                        <table style="width: 100%;">
+                            <tr>
+                                <th> iterar </th>
+                                <th> (loop) </th>
+                            </tr>
+
+                            <tr> 
+                                <th> mientras</th>
+                                <th> (while) </th>
+                            </tr> 
+        
+                            <tr> 
+                                <th> hacer-mientras</th>
+                                <th> (do-while) </th>
+                            </tr>
+
+                            <tr>
+                                <th> repetir </th>
+                                <th> (repeat) </th>
+                            </tr>
+
+                            <tr> 
+                                <th> desde </th>
+                                <th> (for) </th>
+                            </tr> 
+        
+                        </table>
+                    </p>
+                    <h1 class="hero__title" > Estructura mientras ("while")</h1>    
+                    <p class="hero__paragraph" >
+                        <br>La estructura repetitiva mientras (en inglés while o dowhile: 
+                        hacer mientras) es aquella en que el cuerpo del bucle se repite 
+                        mientras se cumple una determinada condición. Cuando se ejecuta la 
+                        instrucción mientras, lo primero que sucede es que se evalúa la condición 
+                        (una expresión booleana). Si se evalúa falsa, no se toma ninguna acción y 
+                        el programa prosigue en la siguiente ins trucción del bucle. Si 
+                        la expresión booleana es verdadera, entonces se ejecuta el cuerpo del
+                        bucle después de lo cual se evalúa de nuevo la expresión booleana. Este proceso se 
+                        repite una y otra vez mientras la expresión booleana (condición) sea verdadera.
+                    </p>
+                    <br><br>
+                    <h1 class="hero__title" > Ejecución de un bucle cero veces</h1>    
+                    <p class="hero__paragraph" >
+                        <br>Obsérvese que en una estructura mientras lo primero que sucede es 
+                        la evaluación de la expresión booleana; si se evalúa falsa en ese punto, 
+                        entonces el cuerpo del bucle nunca se ejecuta. Puede parecer inútil 
+                        ejecutar el cuerpo del bucle cero veces, ya que no tendrá efecto en ningún 
+                        valor o salida. Sin embargo, a veces es la acción deseada.
+                        <br>inicio
+                        <br>n ⬅️ 5
+                        <br>s ⬅️ 0
+                        <br>mientras n <== 4 hacer 
+                        <br>&emsp;leer (x)
+                        <br>&emsp;s ⬅️ s + x
+                        <br>&emsp;fin_mientras
+                        <br>fin
+                        <br><br>En el ejemplo anterior se aprecia que nunca se 
+                        cumplirá la condición (expresión booleana n <== 4), 
+                        por lo cual sólo se ejecutará la acci(n fin y no se ejecutará ninguna acción 
+                        dentro del bucle.
+                    </p>
+                    <h1 class="hero__title" > Estructura hacer-mientras ("do-while")</h1>    
+                    <p class="hero__paragraph" >
+                        <br>El bucle "mientras" al igual que el bucle "desde", que se verá con 
+                        posterioridad, evalúan la expresión al comienzo del bucle de repetición; 
+                        siempre se utilizan para crear bucle "pre-test". Los bucles pre-test se 
+                        denominan también bucles controlados por la entrada. En numerosas ocasiones se 
+                        necesita que el conjunto de sentencias que componen el cuerpo del bucle se 
+                        ejecuten al menos una vez sea cual sea el valor de la expresión o condición 
+                        de evaluación. Estos bucles se denominan bucles post-test o bucles controlados 
+                        por la salida. Un caso típico es el bucle hacer-mientras (do-while) 
+                        existente en lenguajes como C/C++, Java o C#.
+                        <br>El bucle hacer-mientras es análogo al bucle mientras y el cuerpo 
+                        del bucle se ejecuta una y otra vez mientras la condición (expresión booleana) 
+                        sea verdadera. Existe, sin embargo, una gran diferencia y es que el cuerpo del 
+                        bucle está encerrado entre las palabras reservadas hacer y mientras, de modo que las 
+                        sentencias de dicho cuerpo se ejecutan, al menos una vez, antes evalúe la expresión 
+                        booleana. En otras palabras, el cuerpo del bucle siempre se ejecuta, al menos una vez, 
+                        incluso aunque la expresión booleana sea falsa.
+                    </p>
+                    <br><br>
+                    <h1 class="hero__title" > REGLA</h1>    
+                    <p class="hero__paragraph" >
+                        <br>El bucle "hacer-mientras" se termina de ejecutar cuando el valor de la ç
+                        condición es falsa. La elección entre un bucle mientras y un bucle hacer-mientras 
+                        depende del problema de cómputo a resolver. En la mayoría de los casos, 
+                        la condición de entrada del bucle "mientras" es la elección correcta. Por ejemplo, 
+                        si el bucle se utiliza para recorrer una lista de números (o una lista de cualquier 
+                        tipo de objetos), la lista puede estar vacía, en cuyo caso las sentencias del bucle 
+                        nunca se ejecutarán. Si se aplica un bucle hacer-mientras nos conduce a un código 
+                        de errores.
+                        <br>Al igual que en el caso del bucle "mientras" la sentencia en el 
+                        interior del bucle puede ser simple o compuesta. Todas las sentencias en el 
+                        interior del bucle se ejecutan al menos una vez antes de que la expresión o 
+                        condición se evalúe. Entonces, si la expresión es verdadera 
+                        (un valor distinto de cero, en C/C++) las sentencias del cuerpo del bucle se 
+                        ejecutan una vez más. El proceso continúa hasta que la expresión evaluada toma el valor 
+                        falso (valor cero en C/C++).
+                    </p>
+                    <h1 class="hero__title" > ESTRUCTURA repetir ("repeat")</h1>    
+                    <p class="hero__paragraph" >
+                        <br>Existen muchas situaciones en las que se desea que un bucle se ejecute 
+                        al menos una vez antes de comprobar la condición de repetición. En la 
+                        estructura "mientras" si el valor de la expresión booleana es inicialmente 
+                        falso, el cuerpo del bucle no se ejecutará; por ello, se necesitan otros tipos
+                        de estructuras repetitivas.
+                        <br>La estructura repetir (repeat) se ejecuta hasta que se cumpla una 
+                        condición determinada que se comprueba al final del bucle.
+                        <br>El bucle repetir-hasta_que se repite mientras el valor de la expresión booleana 
+                        de la condición sea falsa, justo la opuesta de la sentencia mientras.
+                        <br>algoritmo repetir
+                        <br>var
+                        <br>&emsp;real : numero
+                        <br>&emsp;entero: contador
+                        <br>inicio
+                        <br>&emsp;contador ⬅️ 1
+                        <br>&emsp;repetir
+                        <br>&emsp;&emsp;leer (numero)
+                        <br>&emsp;&emsp;contador ⬅️ contador + 1
+                        <br>&emsp;hasta_que contador > 30
+                        <br>&emsp;escribir ('Numeros leidos 30')
+                        <br>fin
+                    </p>
+                    <br><br>
+                    <h1 class="hero__title" > Diferencias de las estructuras mientras y repetir</h1>    
+                    <p class="hero__paragraph" >
+                        <br>&emsp;* La estructura mientras termina cuando la condición es falsa, mientras 
+                        que repetir termina cuando la condición es verdadera.
+                        <br>&emsp;* En la estructura repetir el cuerpo del bucle se ejecuta 
+                        siempre al menos una vez; por contrario, mientras es más general y permite la 
+                        posibilidad de que el bucle pueda no ser ejecutado. Para usar la estructura 
+                        "repetir" debe estar seguro de que el cuerpo del bucle, bajo cualquier 
+                        circunstancia, se repetirá al menos una vez.
+                    </p>
+                    <br><br>
+                    <h1 class="hero__title" > Estructura desde/para ("for")</h1>    
+                    <p class="hero__paragraph" >
+                        <br>En muchas ocasiones se conoce de antemano el número de veces que se 
+                        desean ejecutar las acciones de un bucle. En estos casos, en el que el número 
+                        de iteraciones es fijo, se debe usar la estruc- tura desde o para (for, 
+                        en inglés). La estructura desde ejecuta las acciones del cuerpo del bucle un 
+                        número especificado de veces y de modo automático controla el número de 
+                        iteraciones o pasos a través del cuerpo del bucle.
+                    </p>
+                    <h1 class="hero__title" > Diferencias de las estructuras mientras y repetir</h1>    
+                    <p class="hero__paragraph" >
+                        <br>La estructura "desde" comienza con un valor inicial de la variable índice y 
+                        las acciones especificadas se ejecutan, a menos que el valor inicial sea 
+                        mayor que el valor final. La variable índice se incrementa en uno y si este nuevo 
+                        valor no excede al final, se ejecutan de nuevo las acciones. Por consiguiente, las 
+                        acciones específicas en el bucle se ejecutan para cada valor de la variable 
+                        índice desde el valor inicial hasta el valor final con el incremento de uno 
+                        en uno.
+                        <br>El incremento de la variable índice siempre es 1 si no se indica expresamente 
+                        lo contrario. Dependiendo del tipo de lenguaje es posible que el incremento sea 
+                        distinto de uno, positivo o negativo. Así, por ejemplo, FORTRAN admite diferentes 
+                        valores positivos o negativos del incremento, y Pascal sólo admite incrementos 
+                        cuyo tamaño es la unidad: bien positivos, bien negativos. La variable índice o 
+                        de control normalmente será de tipo entero y es normal emplear como nombres 
+                        las letras I, J, K.
+                        <br>El formato de la estructura desde varía si se desea un incremento distinto a 
+                        1, bien positivo, bien negativo (decremento).
+                        <br>desde v ⬅️ vi hasta vf
+                        <br>&emsp;inc paso hacer dec
+                        <br>&emsp;(inc, incremento} {dec, decremento}
+                        <br>&emsp; < acciones >
+                        <br>&emsp;.
+                        <br>&emsp;.
+                        <br>&emsp;.
+                        <br>fin_desde
+                        <br>Si el valor inicial de la variable índice es menor que el valor final, los 
+                        incrementos deben ser positivos, ya que en caso contrario la secuencia de acciones 
+                        no se ejecutaría. De igual modo, si el valor inicial es mayor que el valor final, el incremento 
+                        debe ser en este caso negativo, es decir, decremento. Al incremento se le suele denominar 
+                        también paso ("step", en inglés). Es decir,
+                        <br>desde i ⬅️ 20 hasta 10 hacer
+                        <br>&emsp;<acciones>
+                        <br>fin_desde
+                        <br>no se ejecutaría, ya que el valor inicial es 20 y el valor final 10, y como se supone 
+                        un incremento positivo, de valor 1, se produciría un error. El pseudocódigo 
+                        correcto debería ser
+                        <br>desde i ← 20 hasta 10 decremento 1 hacer
+                        <br>&emsp;< acciones >
+                        <br>fin_desde
+                    </p>    
+                    
+                </div>
+            
+                 <br><a href="index.html" class="hero__cta">Volver</a>
+                
+
+            </section>
+</body>
+</html>

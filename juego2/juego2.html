@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Conceptos de Algoritmia</title>
+    <link rel="stylesheet" href="juego2.css">
+    <link rel="shortcut icon" href="/recursos/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <h1 class="title__hight">Juego de Conceptos de Algoritmia</h1>
+    <div id="instructions">
+        <h2 class="text">Instrucciones:</h2>
+        <p class="paragraph">Arrastra las palabras que creas correctas para formar el concepto adecuado. Si la respuesta es incorrecta, se te mostrará la respuesta correcta. Haz clic en una palabra dentro de la zona de respuesta para quitarla. Al finalizar todas las rondas, se te mostrará tu puntaje.</p>
+    </div>
+    <div id="game">
+        <div id="concept-container">
+            <div id="concept" class="concept-drop-area">arrastra las palabras aquí </div>
+        </div>
+        <div id="options-container">
+            <h3>Palabras:</h3>
+            <div id="options"></div>
+        </div>
+        <div id="controls">
+            <button id="checkButton">Comprobar</button>
+            <button id="nextButton">Siguiente</button>
+            <button id="restartButton">Reiniciar</button>
+            <a href="/index.html"  >
+                <button class="button2">volver a la página principal</button>
+            </a>
+            <a href="/desafios.html"  >
+                <button class="button2">volver a la página desafíos</button>
+            </a>
+           
+            <p id="message"></p>
+        </div>
+        <div id="score"></div>
+    </div>
+    <script src="juego2.js"></script>
+
+    
+</body>
+</html>

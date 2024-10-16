@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HADA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="shortcut icon" href="./recursos/favicon-32x32.png" type="image/x-icon">
+    <script
+			src="https://kit.fontawesome.com/81581fb069.js"
+			crossorigin="anonymous"
+		></script>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            background-color: #efa26e;
+        }
+        th,td{
+            padding: 10px;
+        }
+        th {
+            text-align: left;
+        }
+        </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <header class="hero"> 
+
+            <nav class="nav" class="navegacion_ocultar">
+
+                <a href="#hada" class="nav__logo-link">
+                    <img src="./recursos/hada (1).png" class="nav__logo">
+                </a>
+
+                <label class="nav__label">
+                    <input type="checkbox" class="nav__checkbox">
+                </label>
+
+                <ul class="nav__list">
+
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link nav__link--cta">Inicio</a>
+                    </li>
+
+
+                    <div class="content-group">
+                        <div class="search-input-box">
+                           <input class="search-input" id="search-input" type="search" placeholder="Buscar">
+                           <a href="contadores.html " target="_blank">
+                                <i class="fa-solid fa-magnifying-glass icon"> </i>
+                            </a>
+                           
+                          <ul class="container-suggestions">
+                            <ul class="container-suggestions">
+                                <li id="variables">Contenido de Variables</li>
+                                <li id="contadores">Contenido de Contadores</li>
+                                <li id="acumuladores">Contenido de Acumuladores</li>
+        <!-- Agregar las secciones correspondientes aquí -->
+    
+                        </ul>       
+                           
+                        </div>
+                       
+                    </div>
+                       
+                    </div>
+                </ul>
+
+            </nav>
+            <section class="hero__main">
+                <div class="hero__padding">   
+                <h1 class="hero__title">Otros Recursos</h1>
+                </div>
+
+                <figure class="hero__figure">
+                    <img src="./recursos/parapartadoenciclopedia.svg" class="hero__img">
+                </figure> 
+
+                 <div> 
+                 <h1 class="hero__title">Enciclopedias</h1>
+
+                <p class="hero__paragraph" > 
+                 A continuación, querido usuario, le ofrecemos 
+                 <table style="width: 100%;">
+                    <tr>
+                        <th> Título</th>
+                        <th> Autor</th>
+                        <th> Breve descripción </th>
+                    </tr>
+                    <tr> 
+                        <th> La Enciclopedia de Ciencias de la Computación y Tecnología.</th>
+                        <th> James P. Carse. </th>
+                        <th> Esta enciclopedia abarca una amplia gama de temas en ciencias
+                             de la computación y tecnología, incluyendo algoritmos y estructuras de datos. 
+                            Es un recurso valioso para obtener información sobre diversos
+                             aspectos de la informática. </th>
+                    </tr> 
+
+                    <tr> 
+                        <th>La Enciclopedia de Algoritmos.</th>
+                        <th>Ming-Yang Kao.</th>
+                        <th> Publicada por Springer, esta enciclopedia proporciona una cobertura
+                             exhaustiva de algoritmos en diversos campos, incluyendo teoría de algoritmos,
+                             algoritmos en aplicaciones específicas y técnicas avanzadas. </th>
+                    </tr> 
+
+                    <tr> 
+                        <th>Manual de Ciencias de la Computación Teórica</th>
+                        <th> J. Van Leeuwen.</th>
+                        <th> Aunque no es una enciclopedia en el sentido estricto, este manual ofrece una 
+                            visión detallada de muchos aspectos de la teoría de la computación, incluyendo
+                             algoritmos y estructuras de datos. </th>
+                    </tr> 
+
+                    <tr> 
+                        <th> Manual de Algoritmos y Teoría de la Computación.</th>
+                        <th>  M. J. Atallah y M. Blanton </th>
+                        <th> Este libro de referencia cubre una variedad de temas 
+                            en teoría de algoritmos y teoría de la computación,
+                             proporcionando información tanto sobre algoritmos 
+                             básicos como sobre técnicas avanzadas. </th>
+                    </tr> 
+
+                    <tr> 
+                        <th> Introducción a los Algoritmos.</th>
+                        <th> Thomas H. Cormen, Charles E. Leiserson,
+                             Ronald L. Rivest, y Clifford Stein</th>
+                        <th> Aunque no es una enciclopedia, este libro es una referencia
+                             fundamental en el estudio de algoritmos y es ampliamente utilizado
+                              en cursos y como libro de referencia en la industria. </th>
+                    </tr> 
+
+                    <tr> 
+                        <th> El Arte de Programar Computadoras.</th>
+                        <th> Donald E. Knuth.</th>
+                        <th> Esta serie de libros es una obra clásica en la teoría
+                             de algoritmos y programación, y aunque no es una enciclopedia,
+                             proporciona una profunda exploración de los algoritmos y
+                             técnicas de programación.
+                        </th>
+                    </tr> 
+                 </table> 
+
+
+                 <br>
+                    Las enciclopedias aquí presentes pueden servir como guía para responder preguntas no aclaradas en este sitio.
+                </p>
+
+            </div>
+               <a href="otros_recursos.html" class="hero__cta">Volver</a>  
+            </section>
+            
+    </body>
+    </html>

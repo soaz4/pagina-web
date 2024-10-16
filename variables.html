@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HADA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./recursos/favicon-32x32.png" type="image/x-icon">
+    <script
+    src="https://kit.fontawesome.com/81581fb069.js"
+    crossorigin="anonymous"
+    ></script>
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+                background-color: #efa26e;
+            }
+            th,td{
+                padding: 10px;
+            }
+            th {
+                text-align: left;
+            }
+            </style>
+</head>
+<body>
+    
+    <div class="container">
+
+        <header class="hero"> 
+
+            <nav class="nav" class="navegacion_ocultar">
+
+                <a href="#hada" class="nav__logo-link">
+                    <img src="./recursos/hada (1).png" class="nav__logo">
+                </a>
+
+                <label class="nav__label">
+                    <input type="checkbox" class="nav__checkbox">
+                </label>
+
+                <ul class="nav__list">
+
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link nav__link--cta">Inicio</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link nav__link--cta">Temas</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link nav__link--cta">SLE2</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="desafios.html"class="nav__link nav__link--cta">Desafíos</a>
+                    </li>
+
+                    <li class="nav__item ">
+                        <a href="otros_recursos.html" class="nav__link nav__link--cta">Otros recursos</a>
+                    </li>
+                        
+                    <div class="content-group">
+                        <div class="search-input-box">
+                           <input class="search-input" id="search-input" type="search" placeholder="Buscar">
+                           <a href="#" target="_blank">
+                                <i class="fa-solid fa-magnifying-glass icon"> </i>
+                            </a>
+                           
+                          <ul class="container-suggestions">
+                            <ul class="container-suggestions">
+                                <li id="variables">Contenido de Variables</li>
+                                <li id="contadores">Contenido de Contadores</li>
+                                <li id="acumuladores">Contenido de Acumuladores</li>
+        <!-- Agregar las secciones correspondientes aquí -->
+                        </ul>       
+                           
+                        </div>
+                       
+                    </div>
+                       
+                    </div>
+                </ul>
+
+                <script src="suggestions.js"></script>
+                <script src="main.js"></script>
+                       
+                    </div>
+                </ul>
+
+            </nav>
+
+            <section class="main2 ">
+                <div class="hero__title__padding"> 
+
+                <h1 class="hero__title" > Datos, tipos de datos y operaciones primitivas </h1>
+                
+                <p class="hero__paragraph" >  
+                    <br>El primer objetivo de toda computadora es el manejo de la información o datos, 
+                    Estos datos pueden ser las cifras de ventas de un supermercado o las calificaciones de una clase. 
+                    Un dato es la expresión general que describe los objetos con los cuales opera una computadora. La mayoría de las computadoras pueden trabajar con
+                    con varios tipos (modos) de datos. Los algoritmos y los programas correspondientes operan sobre esos tipos de datos.
+                    <br>La acción de las instrucciones ejecutables de las computadoras se refleja en cambios en los valores de las partidas de datos. Los datos de entrada se transforman por el programa, después de las
+                    erapas intermedias, en datos de salida.
+                    En el proceso de resolución de problemas el diseño de la estructura de datos es tan importante como el diseño del algoritmo y del programa que se basa en el mismo. 
+                    <br> Un programa de computadora opera sobre datos (almacenados internamente en la memoria, almacenados en medios externos como discos, memorias USB, memorias de teléfonos celulares, etcétera, o bien introducidos desde un dispositivo como un teclado, un escáner o un sensor
+                    eléctrico). En los lenguajes de programación los datos deben ser de
+                    un tipo de dato especifico. El tipo de datos determina cómo se representan las los datos en la computadora y los diferentes procesos que dicha computadora realiza con ellos.
+                </p> 
+                
+                <h1 class="title">Tipo de datos.</h1>
+                <p class="hero__paragraph" >  
+                    <br>Conjunto específico
+                    de valores de los datos y un conjunto de
+                    operaciones que actúan sobre esos datos.
+                    <br>Existen dos tipos de datos: básicos, incorporados o integrados (estándar) que se incluyen en los lenguajes de programación; 
+                    definidos por el programador o por el usuario.
+                    <br>Además de los datos básicos o simples, se pueden construir otros datos a partir de éstos, y se obtienen los datos compuestos o datos agregados, tales como estructuras, uniones, enumeraciones, vectores o matrices/tablas y cadenas "arrays o arreglos"; también existen otros datos
+                    especiales en lenguajes como C y C++, denominados punteros (apuntadores) y referencias.
+                    <br>Existen dos tipos de datos: simples (sin estructura) y compuestos (estructurados).
+                    Los distintos tipos de datos se representan en diferentes formas en la computadora. 
+                    En la máquina, un dato es un conjunto o secuencia de bits (dígitos 0 o 1). 
+                    Los lenguajes de alto nivel permiten basarse en abstracciones e ignorar los detalles de la 
+                    representación interna. Aparece el concepto de tipo de datos, así como su representación.
+                    <br>Los tipos de datos básicos son los siguientes:
+                    <br>-numéricos (entero, real)
+                    <br>-lógicos (boolean)
+                    <br>-carácter (caracter, cadena)  
+                    <br>Existen algunos lenguajes de programación, FORTRAN esencialmente, que admiten otros tipos de datos: 
+                    complejos, que permiten tratar los números complejos, y otros 
+                    lenguajes (Pascal, C, C++, Java), que también permiten declarar y definir sus propios tipos de datos: enumerados
+                    (emumenated) y subrango (subrange).
+                </p> 
+
+                <h1 class="title">Datos numéricos.</h1>
+                <p class="hero__paragraph" >  
+                    <br>El tipo numérico es el conjunto de los valores numéricos. 
+                    Estos pueden representarse en dos formas distintas:
+                    <br>* tipo numérico entero (integer).
+                    <br>* tipo numérico real (real).
+                    <br>Enteros: el tipo entero es un subconjunto finito de los números enteros. 
+                    Los enteros son números completos, no tienen componentes fraccionarios o 
+                    decimales y pueden ser negativos o positivos.
+                    <br>Ejemplos de números enteros son:
+                    <br>5       6
+                    <br>-15     4
+                    <br>20      17
+                    <br>1340   26
+                    <br>Los números enteros se pueden representar en 8, 16 o 32 bits, e incluso 
+                    64 bits, y eso da origen a una escala de enteros cuyos rangos dependen de 
+                    cada máquina.
+                    <br>Enteros               -32.768 a 32.767
+                    <br>Enteros cortos   -128 a 127
+                    <br>Enteros largos    -2147483648 a 2147483647
+                    <br>Además de los modificadores corto y largo, se pueden 
+                    considerar sin signo (unsigned) y con signo (signed).
+                    <br>sin signo:   0 .. 65.5350
+                    <br>0 .. 4294967296
+                    <br>Los enteros se denominan en ocasiones números de punto o coma fija. 
+                    Los números enteros máximos y mínimos de una computadora suelen ser -32. 768 a +32 . 767. 
+                    Los números enteros fuera de este rango no se suelen representar como enteros, sino como reales,
+                    aunque existen excepciones en los lenguajes de programación modernos como C, C++y Java.
+                    
+                    <br>Reales: el tipo real consiste en un subconjunto de los números reales. 
+                    Los números reales siempre tienen un punto decimal y pueden ser positivos o negativos. 
+                    Un número real consta de un entero
+                    y una parte decimal. 
+                    <br>Los siguientes ejemplos son números reales:
+                    <br>0.08        3739.41
+                    <br>3.7452    -52.321
+                    <br>-8.12        3.0
+                    
+                    <br>En aplicaciones científicas se requiere una representación especial para manejar 
+                    números muy grandes, como la masa de la Tierra, o muy pequeños, como la masa de un electrón.
+                    computadora sólo puede representar un número fijo de dígitos. 
+                    Este número puede variar de una máquina a otra, aunque ocho digitos es un 
+                    número típico. Este límite provoca problemas para representar y almacenar 
+                    números muy grandes o  muy pequeños como son los ya citados o los siguientes:
+                    <br>4867213432              0.00000000387
+                    <br>Existe un tipo de representación denominado notación exponencial o científica y 
+                    que se utiliza para números muy grandes o muy pequeños. Así,
+                    367520100000000000000.
+                    <br>se representa en notación científica descomponiéndolo en grupos de tres dígitos:
+                    <br>367   520   100   000   000   000   000
+                    <br>y posteriormente en forma de potencias de 10
+                    <br>3.675201 x l0²⁰
+                    <br>y de modo similar
+                    <br>.0000000000302579
+                    <br>se representa como
+                    <br>3.02579 x 10-¹¹
+                    <br>La representación en coma flotante es una generalización de notación científica. 
+                    Obsérvese que las siguientes expresiones son equivalentes:
+                    <br>3.675201 x 10¹⁹ = .3675207 x 10²⁰= .03675201 x 10²¹= ...
+                    <br>= 36.75201 x 18¹⁸ = 367.5201 x 10¹⁷ = ...
+                    <br>En estas expresiones se considera la mantisa (parte decimal) al número real y el exponente 
+                    (parte potencial) el de la potencia de diez.
+                    <br>36.75201      mantisa      18    exponente.
+                    <br>Los tipos de datos reales se representan en coma o punto flotante y suelen ser de 
+                    simple precisión, doble precisión o cuádruple precisión y suelen requerir 4 bytes, 
+                    8 bytes o 10-12 bytes, respecivamente. 
+                </p> 
+                <h1 class="title">Datos lógicos (booleanos)</h1>
+                <p class="hero__paragraph" >  
+                    <br>El tipo lógico, también denominado booleano, es el dato que sólo puede tomar uno de dos valores:
+                    <br>cierto o verdadero (true) y falso (false).
+                    <br>Este tipo de datos se utiliza para representar las alternativas (sí/no) a determinadas condiciones. 
+                    <br>Por ejemplo, cuando se pide si un valor entero es par, la respuesta será verdadera o falsa, según
+                    sea par o impar.
+                    <br>C++ y Java soportan el tipo de dato bool.
+                </p> 
+                <h1 class="title">Datos tipo carácter y tipo cadena</h1>
+                <p class="hero__paragraph" >  
+                    <br>El tipo carácter es el conjunto finito y ordenado de caracteres que la computadora reconoce. 
+                    Un dato tipo carácter contiene un solo carácter. Los caracteres que reconocen las diferentes computadoras no son 
+                    estándar; sin embargo, la mayoría reconoce los siguientes caracteres alfabético y numéricos:
+                    <br>* caracteres alfabéticos (A, B, C, ..., z) (a, b, C, ..., Z),
+                    <br>caracteres numéricos (1, 2, .., 9, 0),
+                    <br>* caracteres especiales (+, -, *, /, ^, ., ;, <, >, $, ...).
+                    <br>Una cadena (string) de caracteres es una sucesión de caracteres que se encuentran delimitados por una comilla 
+                    (apóstrofo) o dobles comillas, según el tipo de lenguaje de programación. La longitud de una cadena de caracteres es 
+                    el número de ellos comprendidos entre los separadores olimitadores. 
+                    <br>Algunos lenguajes tienen datos tipo cadena.
+                    <br>' Hola Mortimer '
+                    <br>' 12 de octubre de 1492 '
+                    <br>' Sr. McKoy ' 
+                </p> 
+                
+
+               
+                 <h1 class="hero__title" > Constantes y variables </h1>
+                 <figure class="hero__figure">
+                    <img src="/recursos/vsriables 2.svg" class="hero__img2">
+                 </figure>
+                 <p class="hero__paragraph" >  
+                    
+                    <br>Los programas de computadora contienen ciertos valores que no deben cambiar durante la ejecución del programa. 
+                    Tales valores se llaman constantes. De igual forma, existen otros valores que cambiarán durante la ejecución del 
+                    programa; a estos valores se les llama variables. 
+                    <br>Una constante es un dato que permanece sin cambios durante todo el desarrollo del algoritmo o durante la ejecución del programa.
+                    <table style="width: 100%;">
+                        <tr>
+                            <th> Constantes reales válidas</th>
+                            <th> Constantes reales NO válidas</th>
+                            <th> Constantes reales en notación científica</th>
+                        </tr>
+                        <tr> 
+                            <th> <br>1.234    
+                                <br>1,752.63
+                                <br>-0.1436
+                                <br>+ 54437324</th>
+                            <th> <br>(comas no permitidas)
+                                <br>82 (normalmente contienen un punto decimal, 
+                                aunque existen lenguajes que lo admiten
+                                sin punto)</th>
+                            <th>3.374562E  equivale a 3.374562 x 10² </th>
+                        </tr> 
+    
+                     </table> 
+                     <br>Una constante tipo carácter o constante de caracteres consiste 
+                     en un carácter válido encerrado dentro de apóstrofos; por ejemplo,
+                     <br>'B'       '+'      '4'       ';'
+                     <br>Si se desea incluir el apóstrofo en la cadena, entonces debe 
+                     aparecer como un par de apóstrofos, encerrados dentro de simples comillas.
+                     <br>"  "
+                     <br>Una secuencia de caracteres se denomina normalmente una cadena y una constante 
+                     tipo cadena es una cadena encerrada entre apóstrofos. Por consiguiente,
+                     <br>'Juan Minguez'
+                     <br>y
+                     <br>'Pepe Luis Garcia'
+                     <br>son constantes de cadena válidas. Nuevamente, si un apóstrofo es uno de los caracteres 
+                     en una constante de cadena, debe aparecer como un par de apóstrofos.
+                     <br>'John' 's'
+                     Constantes lógicas (boolean)
+                     Sólo existen dos constantes lógicas o boolean:
+                     verdadero falso
+                </p> 
+                <h1 class="hero__title" > Constantes lógicas (boolean)</h1>
+                <p class="hero__paragraph" > 
+                    <br>Sólo existen dos constantes lógicas o boolean:
+                    <br>verdadero 
+                    <br>falso
+                    <br>La mayoría de los lenguajes de programación permiten diferentes tipos de constantes: 
+                    enteras, reales, caracteres y boolean o lógicas, y representan datos de esos tipos.
+                    <br>Una variable es un objeto o tipo de datos cuyo valor puede cambiar durante el 
+                    desarrollo del algoritmoo o ejecución del programa. Dependiendo del lenguaje, hay 
+                    diferentes tipos de variables, tales como enteras, reales, carácter, lgicas y de cadena. 
+                    <br>Una variable que es de un cierto tipo puede tomar únicamente valores de ese tipo. 
+                    Una variable de carácter, por ejemplo, puede tomar como valor sólo caracteres, 
+                    mientras que una variable entera puede tomar sólo valores enteros.
+                    <br>Si se intenta asignar un valor de un tipo a una variable de otro tipo se 
+                    producirá un error de tipo o de tipos incompatibles.
+                    <br>Una variable se identifica por los siguientes atributos: nombre que lo asigna y 
+                    tipo que describe el uso de la variable.
+                    <br>Los nombres de las variables, a veces conocidos como identificadores, suelen 
+                    constar de varios caracteres alfanuméricos, de los cuales el primero normalmente 
+                    es una letra. No se deben utilizar,
+                    <br>aunque lo permita el lenguaje, caso de FORTRAN, como nombres de identificadores 
+                    palabras reservadas del lenguaje de programación. Nombres válidos de variables son:
+                </p> 
+                <h1 class="hero__title" > Declaración de constantes y variables</h1>
+                <p class="hero__paragraph" > 
+                    <br>Normalmente los identificadores de las variables y de las constantes con nombre 
+                    deben ser declaradas en los programas antes de ser utilizadas. La sintaxis de la 
+                    declaración de una variable suele ser:
+                    <br> (tipo_de_dato) (nombre_variable) [=expresión]
+                    
+                    <br>Obs: Algunos lenguajes de programación admiten como válido el carácter subrayado 
+                    en los identificadores.
+                </p> 
+                
+                <br></b><a href="index.html" class="hero__cta" >Volver</a>
+                
+
+            </section>
+</body>
+</html>
