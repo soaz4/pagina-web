@@ -334,12 +334,12 @@ button {
     border: 1px solid black;
     border-bottom: 4px solid black;
 
-    --icon-question: url("/recursos/hahapregunta.svg");
+    --icon-question: url("recursos/hahapregunta.svg");
 }
 
 .faq__item[open] {
     background-color: var(--color-secundario);
-    --icon-question: url("/recursos/hadarespuesta.svg");
+    --icon-question: url("recursos/hadarespuesta.svg");
 }
 
 
